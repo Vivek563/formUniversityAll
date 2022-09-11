@@ -1,0 +1,186 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    /* box-sizing: border-box; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+.parent {
+    max-width: 75%;
+    max-height: 100vh;
+    display: grid; 
+    grid-template-columns: 1.2fr 2fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 30px;
+    grid-row-gap: 0px; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+    /* .div1 { grid-area: 1 / 1 / 2 / 2; } 
+    .div2 { grid-area: 1 / 2 / 2 / 3; }  */
+
+/* Styling first half greetings */
+
+.greetings {
+    height: 97vh;
+    color: white;
+}
+
+.rounded {
+    border-radius: 8px;
+    background-color: rgb(59, 55, 245);
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.thank-you > h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.thank-you > p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.box {
+    border-radius: 8px;
+    background-color: rgba(35, 32, 200, 0.74);
+    margin-bottom: 30px;
+    padding: 8px;
+}
+
+.box > p {
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* Styling form section */
+.form {
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.option-container {
+    display: flex;
+    justify-content: stretch;
+}
+
+.option {
+    padding: 10px 80px 10px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.472);
+    margin-right: 30px;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.active {
+    border: 1px solid rgb(59, 55, 245);
+    background-color: rgba(58, 55, 245, 0.1);
+    color: rgb(59, 55, 245);
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    width: 1rem;
+    height: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    margin-left: 4px;
+}
+
+
+.label {
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* desinging helper */
+.helper {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.helper > li {
+    width: 90px;
+    list-style-type: none;
+    padding: 8px;
+    background-color: rgba(58, 55, 245, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Styling donatio text */
+.textBox {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.472);
+    font-size: 1rem;
+    outline: none;
+}
+
+.textBox:focus {
+    border: 1px solid  rgb(59, 55, 245);
+    box-shadow: none;
+    background-color: rgba(58, 55, 245, 0.1);
+    color: rgb(59, 55, 245);
+    font-weight: 600;
+}
+
+#address {
+    word-wrap: break-word;
+    line-break: anywhere;
+    max-lines: 4;
+}
+
+/* designing name */
+#name {
+    align-items: center;
+}
+
+#salutation > option {
+    outline: none;
+}
+
+/* submit button */
+input[type="submit"] {
+    width: 220px;
+    background-color: rgb(59, 55, 245);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
