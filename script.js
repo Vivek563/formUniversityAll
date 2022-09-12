@@ -4,7 +4,7 @@
         var offlinePayment = document.getElementById("offline");
         var onlinePayment = document.getElementById("online");
         var amount = document.getElementById("amount-helper");
-
+        var country = document.getElementById("country");
        
         indianDonor.onclick = function() {
             if(indianDonor.checked){
@@ -44,3 +44,17 @@
             document.getElementById("amount").focus();
           }
         });
+
+        country.onclick = function() {
+            var code = country.value;
+            
+            if(code == "India"){
+
+                document.getElementById("state-title").classList.remove("hidden");
+                document.getElementById("state").classList.remove("hidden");
+            }
+            else {
+                document.getElementById("state").classList.add("hidden");
+                document.getElementById("state-title").classList.add("hidden");
+            }
+        }

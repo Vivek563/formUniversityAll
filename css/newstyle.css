@@ -14,7 +14,7 @@ body {
 }
 
 .parent {
-    max-width: 75%;
+    max-width: 1024px;
     max-height: 100vh;
     display: grid; 
     grid-template-columns: 1.2fr 2fr; 
@@ -116,7 +116,7 @@ label {
     color: gray;
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 /* desinging helper */
@@ -164,7 +164,7 @@ label {
 }
 
 /* designing name */
-#name {
+.center {
     align-items: center;
 }
 
@@ -183,4 +183,15 @@ input[type="submit"] {
     font-weight: 600;
     color: white;
     margin-top: 30px;
+}
+
+/* Desinging phone number contorl */
+.form-control {
+    width: 100px;
+    max-width: 100px;
+}
+
+
+.hidden {
+    display: none;
 }
