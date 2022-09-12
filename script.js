@@ -33,3 +33,14 @@
                 onlinePayment.parentElement.classList.add('active')
             }
         }
+
+        document
+        .getElementById("amount-helper")
+        .addEventListener("click", function (e) {
+          // e.target is our targetted element.
+          // try doing console.log(e.target.nodeName), it will result LI
+          if (e.target && e.target.nodeName == "LI") {
+            document.getElementById("amount").value = e.target.innerText;
+            document.getElementById("amount").focus();
+          }
+        });

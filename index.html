@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donation - University of Allahabad</title>
     <link rel="stylesheet" href="./css/newstyle.css" />
-    <script src="./script.js"></script>
   </head>
   <body>
     <section class="parent">
@@ -499,17 +498,7 @@
       </div>
     </section>
 
-    <script>
-      document
-        .getElementById("amount-helper")
-        .addEventListener("click", function (e) {
-          // e.target is our targetted element.
-          // try doing console.log(e.target.nodeName), it will result LI
-          if (e.target && e.target.nodeName == "LI") {
-            document.getElementById("amount").value = e.target.innerText;
-            document.getElementById("amount").focus();
-          }
-        });
+    <script src="./script.js">
     </script>
   </body>
 </html>
