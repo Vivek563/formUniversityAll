@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="form">
-        <h3>Kindly fill in the details</h3>
+        <h3 id="form-title">Kindly fill in the details</h3>
         <form action="/http://127.0.0.1:5500/new.html" method="get">
           <p class="label">Choose Donor Type</p>
           <div class="option-container">
@@ -725,6 +725,18 @@
               id="pancard"
               class="textBox"
               placeholder="XOISD937"
+              required
+            />
+          </div>
+          <br />
+          <p class="label">Aadhar Card</p>
+          <div class="option-container">
+            <input
+              type="text"
+              name="aadharcard"
+              id="aadharcard"
+              class="textBox"
+              placeholder="XXXX-XXXX-XXXX"
               required
             />
           </div>
